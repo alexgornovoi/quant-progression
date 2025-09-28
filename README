@@ -1,0 +1,78 @@
+# Quant Progression
+
+
+
+## Books
+- [ ] **Kurt** → *Bayesian Statistics the Fun Way*  
+- [ ] **DeGroot** → *Probability and Statistics*  
+- [ ] **Shreve I** → *Stochastic Calculus for Finance I: The Binomial Asset Pricing Model*  
+- [ ] **Shreve II** → *Stochastic Calculus for Finance II: Continuous-Time Models*  
+- [ ] **Hull** → *Options, Futures, and Other Derivatives*  
+- [ ] **Meyers** → *Effective Modern C++*  
+- [ ] **Numerical Recipes** → *Numerical Recipes in C++*  
+
+---
+
+## Progression
+
+### Module 1: Bayesian Foundations (Kurt)
+- [ ] Bayes’ theorem basics (Ch 1–4) → exercises + Python coin-flip simulation  
+- [ ] Bayesian update function in Python (Ch 3–4)  
+- [ ] Common distributions (Ch 5–7) → priors/posteriors with plots  
+- [ ] Informative vs uninformative priors (Ch 8–9)  
+- [ ] Bayesian updates for dice and other examples (Ch 10–13)  
+
+**Project 1: Bayesian Coin Toss Simulator**  
+- [ ] Build a Python app that simulates coin flips and updates beliefs with Bayes’ theorem  
+- [ ] Deliverables: notebook + plots + explanations  
+
+---
+
+### Module 2: Probability & Randomness (DeGroot, Shreve I & II)
+- [ ] Law of Large Numbers & Central Limit Theorem (DeGroot Ch 5–6) → Monte Carlo CLT simulation  
+- [ ] Random walks (Shreve I Ch 1–2)  
+- [ ] Brownian motion basics (Shreve II Ch 1)  
+- [ ] Ito’s Lemma (Shreve II Ch 4)  
+- [ ] Geometric Brownian Motion (Shreve II Ch 3–4)  
+
+**Project 2: Market Simulator (GBM)**  
+- [ ] Simulate stock paths with GBM  
+- [ ] Compare simulated vs historical data  
+
+---
+
+### Module 3: Option Pricing & Financial Math (Hull, Shreve II)
+- [ ] Forwards, futures, swaps (Hull Ch 5–7)  
+- [ ] Black–Scholes assumptions + PDE (Hull Ch 13–14, Shreve II Ch 3)  
+- [ ] Black–Scholes formula (Hull Ch 14)  
+- [ ] Binomial tree pricer (Hull Ch 12, Shreve I Ch 3)  
+- [ ] Monte Carlo pricer (Hull Ch 20, Shreve II Ch 6)  
+
+**Project 3: Option Pricing Library**  
+- [ ] Implement Black–Scholes, Binomial, Monte Carlo methods  
+- [ ] Compare accuracy + runtime across methods  
+
+---
+
+### Module 4: Portfolio Theory (Hull, DeGroot, Kurt)
+- [ ] Mean-variance optimization (Hull Ch 8–9)  
+- [ ] Classical optimizer in Python → efficient frontier plots  
+- [ ] Bayesian portfolio optimization (Kurt Ch 12–15)  
+
+**Project 4: Bayesian Portfolio Optimizer**  
+- [ ] Compare classical vs Bayesian portfolio approaches  
+- [ ] Test on historical stock return data  
+
+---
+
+### Module 5: Programming & Numerical (Meyers, Numerical Recipes)
+- [ ] C++ coin flip simulator  
+- [ ] Monte Carlo π estimation (C++ vs Python performance)  
+- [ ] Monte Carlo option pricer in C++  
+- [ ] Matrix multiplication benchmarks (C++ optimized vs NumPy)  
+
+**Project 5: Quant C++ Toolkit**  
+- [ ] High-performance Monte Carlo + option pricing toolkit in C++  
+- [ ] Performance benchmarks vs Python  
+
+---
