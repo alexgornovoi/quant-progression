@@ -3,7 +3,7 @@
 This project serves as a way for me to track my progression on studying topics for quantitative finance.
 Feel free to follow this study plan if you find it interesting.
 
-The notes for this project are intended to be opened in [Obsidian](https://obsidian.md/). 
+The notes for this project are intended to be opened in [Obsidian](https://obsidian.md/). Some advanced latex will not be supported by githubs markdown viewer.
 
 ## Books
 - [ ] **Kurt** → *Bayesian Statistics the Fun Way*  
