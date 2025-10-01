@@ -3,12 +3,15 @@ $\neg$ means not or negation $P(X) + \neg P(X) = 1$. We can find the negations o
 $\Omega$ is used to indicate the set of all of events. For example the set of all event of flipping a coin is $\Omega = {heads,tails}$. You can calculate the probability of $X$ occurring by 
 
 If you have the odds that $X$ happens is $m$ and the odds it does not happen is $n$. The probability of it happening can be calculated as
-$$\frac{P(X)}{\neg P(X)} = \frac{m}{n}$$
-$$n * P(X) = m * \neg P(X)$$
-$$n*P(X) = m(1-P(X))$$
-$$n*P(X) = m-m*P(X)$$
-$$(n+m)*P(X) = m$$
-$$P(X) = \frac{m}{n+m}$$
+$$
+\begin{aligned}
+&n * P(X) = m * \neg P(X)\\
+&n*P(X) = m(1-P(X))\\
+&n*P(X) = m-m*P(X)\\
+&(n+m)*P(X) = m\\
+&P(X) = \frac{m}{n+m}
+\end{aligned}
+$$
 
 # Exercises
 1. What is the probability of rolling two six-sided dice and getting a value greater than 7?
