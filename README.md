@@ -13,6 +13,9 @@ Some advanced LaTeX will not be supported by GitHub’s markdown viewer.
 - **DeGroot** → *Probability and Statistics*  
 - **Meyers** → *Effective Modern C++*  
 - **Iglberger** → *C++ Software Design*  
+- **Bryant & O’Hallaron** → *Computer Systems: A Programmer’s Perspective*  
+- **Williams** → *C++ Concurrency in Action*  
+- **Stevens** → *UNIX Network Programming: The Sockets Networking API*  
 - **Shreve II** → *Stochastic Calculus for Finance II: Continuous-Time Models*  
 - **Hull** → *Options, Futures, and Other Derivatives*  
 - **Tuckman & Serrat** → *Fixed Income Securities: Tools for Today’s Markets*  
@@ -27,11 +30,10 @@ Some advanced LaTeX will not be supported by GitHub’s markdown viewer.
 **Learning Outcomes**
 - Understand priors, posteriors, and Bayesian updating.  
 - Build intuition for probabilistic reasoning under uncertainty.  
-- Apply Bayesian inference to simple estimation and decision-making problems.  
+- Apply Bayesian inference to decision-making and estimation.  
 
 **Industry Tools**
-- **Python** — standard for statistical modeling and research.  
-- **Libraries:** `numpy`, `matplotlib`, `scipy.stats`, `seaborn`  
+- Python (`numpy`, `matplotlib`, `scipy.stats`, `seaborn`)  
 
 **Project 1: Bayesian Simulator**  
 - [ ] Create a Python notebook that models coin flips and dice rolls.  
@@ -43,11 +45,10 @@ Some advanced LaTeX will not be supported by GitHub’s markdown viewer.
 **Learning Outcomes**
 - Master random variables, expectation, and variance.  
 - Learn estimation, confidence intervals, and hypothesis testing.  
-- Build the statistical foundation for applied stochastic processes.  
+- Build the statistical foundation for stochastic modeling.  
 
 **Industry Tools**
-- **Python**  
-- **Libraries:** `numpy`, `pandas`, `scipy`, `statsmodels`  
+- Python (`numpy`, `pandas`, `scipy`, `statsmodels`)  
 
 **Project 2: Statistical Toolkit**  
 - [ ] Simulate LLN and CLT using `numpy` random draws.  
@@ -63,8 +64,8 @@ Some advanced LaTeX will not be supported by GitHub’s markdown viewer.
 - Translate statistical and numerical routines into high-performance C++.  
 
 **Industry Tools**
-- **C++17+** — core language for production quant systems.  
-- **Libraries:** `Eigen` (linear algebra), `fmt` (string formatting).  
+- C++17+  
+- Libraries: `Eigen` (linear algebra), `fmt` (output formatting)  
 
 **Project 3: Numerical Foundations in C++**  
 - [ ] Implement basic numerical and statistical routines in C++.  
@@ -79,8 +80,7 @@ Some advanced LaTeX will not be supported by GitHub’s markdown viewer.
 - Build modular codebases for quant applications.  
 
 **Industry Tools**
-- **C++17+**  
-- **Libraries:** `Eigen`, `Catch2` or `doctest` for testing.  
+- C++17+ (`Eigen`, `Catch2` or `doctest` for testing)  
 
 **Project 4: C++ Quant Library Skeleton**  
 - [ ] Create a modular library with components for math, utils, and pricing.  
@@ -88,97 +88,143 @@ Some advanced LaTeX will not be supported by GitHub’s markdown viewer.
 
 ---
 
-### Module 5: Stochastic Calculus and Derivative Pricing (Shreve II)
+### Module 5: Computer Systems and Performance Engineering (Bryant & O’Hallaron)
 **Learning Outcomes**
-- Understand Brownian motion, Ito’s Lemma, and stochastic integrals.  
+- Understand how C++ and Python code interact with CPU, memory, and cache.  
+- Analyze performance bottlenecks related to memory locality and I/O.  
+- Apply profiling and optimization strategies for numerical workloads.  
+
+**Industry Tools**
+- Profilers: `perf`, `valgrind`, `gprof` (C++), `cProfile` (Python)  
+
+**Project 5: Monte Carlo Benchmark Study**  
+- [ ] Benchmark Monte Carlo simulations in Python vs C++.  
+- [ ] Measure and analyze cache effects and vectorization improvements.  
+
+---
+
+### Module 6: Concurrency and Parallelism for Quant Systems (Williams)
+**Learning Outcomes**
+- Understand threads, futures, locks, and atomics in modern C++.  
+- Learn to design safe, parallel numerical algorithms.  
+- Apply concurrency to Monte Carlo, backtesting, and simulation workloads.  
+
+**Industry Tools**
+- C++: `<thread>`, `<future>`, `<mutex>`, OpenMP  
+- Python: `multiprocessing`, `concurrent.futures`, `numba`, `joblib`  
+
+**Project 6: Parallel Simulation Engine**  
+- [ ] Parallelize Monte Carlo simulations using threads or OpenMP.  
+- [ ] Compare runtime scaling with 1, 2, 4, and 8 threads.  
+- [ ] Profile performance and identify synchronization overhead.  
+
+---
+
+### Module 7: Networking and Communication Systems (Stevens)
+**Learning Outcomes**
+- Understand how data moves between processes and across networks.  
+- Learn TCP/UDP sockets, asynchronous I/O, and serialization.  
+- Build reliable data feeds for market simulation or analytics.  
+
+**Industry Tools**
+- C++: POSIX sockets, `boost::asio`  
+- Python: `socket`, `asyncio`, `websockets`  
+- Serialization: `json`, `msgpack`, `protobuf`  
+
+**Project 7: Real-Time Market Feed Simulation**  
+- [ ] Stream mock tick data between a producer and consumer process.  
+- [ ] Measure latency and throughput.  
+- [ ] Extend to handle order and trade messages.  
+
+---
+
+### Module 8: Stochastic Calculus and Derivative Pricing (Shreve II)
+**Learning Outcomes**
+- Understand Brownian motion, Ito’s Lemma, and stochastic differential equations.  
 - Derive and implement the Black–Scholes model.  
 - Simulate pricing using Monte Carlo methods.  
 
 **Industry Tools**
-- **Python** (research prototyping) and/or **C++** (production implementation).  
-- **Libraries:** `numpy`, `scipy`, `matplotlib`, optional `numba` for speed.  
+- Python (`numpy`, `scipy`, `matplotlib`, optional `numba` for performance)  
+- Optional C++ implementation using `Eigen`  
 
-**Project 5: Option Pricing Engine**  
+**Project 8: Option Pricing Engine**  
 - [ ] Implement analytical Black–Scholes and Monte Carlo pricers.  
 - [ ] Visualize pricing results and Greeks with `matplotlib`.  
 
 ---
 
-### Module 6: Financial Instruments and Market Context (Hull)
+### Module 9: Financial Instruments and Market Context (Hull)
 **Learning Outcomes**
 - Understand derivatives, swaps, futures, and hedging.  
 - Apply arbitrage and replication principles to practical markets.  
 - Connect mathematical models to market conventions.  
 
 **Industry Tools**
-- **Python**  
-- **Libraries:** `pandas`, `numpy`, `matplotlib`, `yfinance` (market data).  
+- Python (`pandas`, `numpy`, `matplotlib`, `yfinance`)  
 
-**Project 6: Derivatives Dashboard**  
+**Project 9: Derivatives Dashboard**  
 - [ ] Build a small Python or Streamlit app that prices options, forwards, and futures.  
 - [ ] Visualize payoff and P/L diagrams.  
 
 ---
 
-### Module 7: Fixed Income, Portfolio Theory, and Risk (Tuckman & Serrat)
+### Module 10: Fixed Income, Portfolio Theory, and Risk (Tuckman & Serrat)
 **Learning Outcomes**
 - Learn yield curve construction, duration, convexity, and DV01.  
 - Build and optimize fixed-income portfolios.  
 - Understand VaR, CVaR, and risk-adjusted performance metrics.  
 
 **Industry Tools**
-- **Python**  
-- **Libraries:** `pandas`, `numpy`, `cvxpy`, `scipy.optimize`, `matplotlib`.  
+- Python (`pandas`, `numpy`, `cvxpy`, `scipy.optimize`, `matplotlib`)  
 
-**Project 7: Bond & Portfolio Analyzer**  
+**Project 10: Bond & Portfolio Analyzer**  
 - [ ] Bootstrap yield curves from sample data.  
 - [ ] Optimize portfolio weights for risk/return or duration targets.  
 - [ ] Visualize efficient frontiers and sensitivity metrics.  
 
 ---
 
-### Module 8: Market Microstructure and Execution (Harris)
+### Module 11: Market Microstructure and Execution (Harris)
 **Learning Outcomes**
 - Learn order types, liquidity, and market impact.  
 - Model execution algorithms (TWAP, VWAP).  
 - Understand the dynamics of limit order books.  
 
 **Industry Tools**
-- **Python**  
-- **Libraries:** `pandas`, `numpy`, `plotly`, `simpy` (for event simulation).  
+- Python (`pandas`, `numpy`, `plotly`, optional `simpy` for event simulation)  
 
-**Project 8: Order Book Simulator**  
+**Project 11: Order Book Simulator**  
 - [ ] Build a simplified order book model in Python.  
 - [ ] Simulate algorithmic executions and analyze cost efficiency.  
 
 ---
 
-### Module 9: Data Infrastructure and Systems Design (Kleppmann)
+### Module 12: Data Infrastructure and Systems Design (Kleppmann)
 **Learning Outcomes**
 - Understand data pipelines, storage, and streaming in quant systems.  
 - Design robust and efficient architectures for research and backtesting.  
 - Implement scalable data ingestion and querying.  
 
 **Industry Tools**
-- **Python**  
-- **Databases:** `DuckDB`, `PostgreSQL`, `SQLite`  
-- **Libraries:** `pandas`, `sqlalchemy`, `pyarrow`  
+- Python (`pandas`, `sqlalchemy`, `duckdb`, `pyarrow`)  
+- Databases: DuckDB, PostgreSQL, or SQLite  
 
-**Project 9: Market Data Pipeline**  
+**Project 12: Market Data Pipeline**  
 - [ ] Build a Python ETL pipeline to ingest and store market data.  
 - [ ] Query and aggregate data for analytics using SQL or DuckDB.  
 
 ---
 
-### Module 10: Quant Capstone Integration
+### Module 13: Quant Capstone Integration
 **Learning Outcomes**
-- Integrate finance models, risk analytics, and infrastructure into one system.  
+- Integrate financial models, risk analytics, and infrastructure into one system.  
 - Build a cohesive quant research environment with efficient data access.  
 - Document and benchmark system performance.  
 
 **Industry Tools**
-- **Python + C++** integration (`pybind11` or `ctypes`).  
-- **Libraries:** `numpy`, `pandas`, `matplotlib`, `Eigen`.  
+- Python + C++ integration (`pybind11` or `ctypes`)  
+- Libraries: `numpy`, `pandas`, `matplotlib`, `Eigen`  
 
 **Final Project: Quant Research Platform**  
 - [ ] Combine previous modules into a unified pricing, risk, and analytics system.  
